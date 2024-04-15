@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    # base.globals
+\*------------------------------------*/
+
+/**
+ * Initialize typomatic in project (sets font-size and line-height
+ * on html selector.
+ */
+html {
+    height: 100%;
+    font-size: responsive;
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background: $background;
+
+    font-family: $ff-sans;
+    line-height: 1.5;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+svg {
+    max-width: 100%;
+}

@@ -1,0 +1,20 @@
+<div class="blog__social">
+  <a
+    class="blog__social__item"
+    href="https://www.facebook.com/sharer.php?u={{ .Permalink | absURL }}"
+  >
+    <i class="u-icon u-icon--lrg u-icon--facebook"></i>
+  </a>
+  <a
+    class="blog__social__item"
+    href="https://twitter.com/share?url={{ .Permalink | absURL }}&text={{ .Title }}&via={{ site.Title }}"
+  >
+    <i class="u-icon u-icon--lrg u-icon--twitter"></i>
+  </a>
+  <a
+    class="blog__social__item"
+    href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}"
+  >
+    <i class="u-icon u-icon--lrg u-icon--linkedin"></i>
+  </a>
+</div>

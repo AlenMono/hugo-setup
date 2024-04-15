@@ -1,0 +1,128 @@
+/*------------------------------------*\
+    # base.typography
+\*------------------------------------*/
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: $ff-sans;
+    font-weight: $type-weight-bold;
+}
+
+h1 {
+        font-size: responsive $type-xxxlarge $type-xxxxlarge;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 68px 84px;
+        line-height-range: 320px 1440px;
+}
+
+h2 {
+        font-size: responsive $type-xxlarge $type-xxxlarge;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 52px 68px;
+        line-height-range: 320px 1440px;
+}
+
+h3 {
+        font-size: responsive $type-xlarge $type-xxlarge;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 44px 52px;
+        line-height-range: 320px 1440px;
+}
+
+h4 {
+        font-size: responsive $type-large $type-xlarge;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 40px 44px;
+        line-height-range: 320px 1440px;
+}
+
+h5 {
+        font-size: responsive $type-medium $type-large;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 32px 40px;
+        line-height-range: 320px 1440px;
+}
+
+h6 {
+        font-size: responsive $type-base $type-medium;
+        font-range: 320px 1440px;
+        
+        line-height: responsive 28px 32px;
+        line-height-range: 320px 1440px;
+}
+
+/**
+ * Paragraphs
+ */
+p {
+    font-size: responsive $type-small $type-base;
+    font-range: 320px 1440px;
+    
+    line-height: responsive 20px 28px;
+    line-height-range: 320px 1440px;
+    margin: 0;
+}
+
+/**
+ * Lists (ol, ul, dd)
+ */
+ol, ul, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ol {}
+ol li {}
+ul {}
+ul li {}
+dd {}
+dl dt {}
+dl dd {}
+
+/**
+ * Anchors
+ */
+a {
+    color: $color-primary;
+    text-decoration: none;
+    text-decoration-skip-ink: auto; /* Ensure that underlines don’t pass through descenders. */
+}
+a:link {}
+a:hover {
+    color: color($color-primary lightness(+20));
+}
+a:focus {
+    outline: 0;
+    color: color($color-primary lightness(+30));
+}
+a:visited {}
+
+/**
+ * Typographic details
+ */
+hr {
+    border-top: 1px solid #bfbfbf;
+}
+em {}
+b, strong {
+    font-weight: bold
+}
+address {}
+small {}
+pre {}
+code {
+    background-color: color($color-text lightness(+80%));
+    padding: calc($unit / 2);
+    color: $color-secondary;
+}
+sub {}
+sup {}
+strike {}

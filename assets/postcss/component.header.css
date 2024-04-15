@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    # component.header
+\*------------------------------------*/
+
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc($unit * 8) calc($unit * 9);
+
+        @media (--screen-from-lrg) {
+            padding: calc($unit * 13) calc($unit * 9);
+        }
+    }
+
+    &__logo {
+        border: 2px solid transparent;
+
+        &:focus {
+            border: 2px solid $color-secondary;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+/*------------------------------------*\
+    #view.home
+\*------------------------------------*/
+
+$hero-bg-color: $color-primary;
+
+.home {
+	&__hero {
+        position: relative;
+
+		display: block;
+		padding: calc($unit * 40) calc($unit * 8);
+
+        &:after {
+            content: "";
+            
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            
+            background: linear-gradient(135deg, $color-primary 25%, transparent 25%) -50px 0,  linear-gradient(225deg, $color-primary 25%, transparent 25%) -50px 0;
+            background-size: 50px 50px;
+        }
+
+        &__title {
+            @mixin type-scale $type-huge, 6;
+            color: $color-primary;
+            padding-left: 100px;
+
+            &:before {
+                content: "";
+                display: block;
+
+                background-image: url('/assets/img/gator-hero.svg'); 
+                background-size: 100px 100px;
+                background-repeat: no-repeat;
+                background-position: 0 center;
+            }
+        }
+
+        &__subtitle {
+            width: 480px;
+
+            @mixin type-scale $type-xlarge, 1.5; 
+            font-weight: $type-weight-light;
+
+            color: $grey-7;
+        }
+
+        &__link {
+            text-decoration: underline;
+        }
+	}
+
+    &__top {
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+
+        border-bottom: 1px solid $grey-2;
+        padding: calc($unit * 2) calc($unit * 4); 
+
+        background-color: white;
+    }
+
+	&__baseline {
+        z-index: 0;
+
+        &:after {
+            content: "";
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            
+            display: block;
+            
+            background: linear-gradient(to bottom, hsla(280, 50%, 30%, 0.1), hsla(280, 50%, 30%, 0.1) 1px, transparent 1px, transparent);
+            background-size: 100% calc($base-line-height / 4 * 1px);
+            pointer-events: none;
+        }
+    }
+ 
+    &__title {
+
+        &--primary {
+            @mixin type-scale $type-xxlarge, 2;
+            color: $color-primary;
+        }
+
+        &--secondary {
+            font-family: $ff-serif;
+            color: $color-secondary;
+        }
+    }
+
+    &__divider {
+
+        &--primary {
+            width: calc($unit * 6);
+            height: calc($unit / 2);
+            margin: calc($unit * 4) 0;
+            background-color: $color-primary;
+        }
+    }
+
+    &__data {
+
+        &--primary {
+            position: relative;
+
+            &:before {
+                content: attr(data-name);
+                position: absolute;
+                left: calc(-$unit * 14);
+                
+                display: block;
+                width: calc($unit * 14);
+
+                font-size: 16px;
+                font-weight: $type-weight-regular;
+                
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__grid {
+
+        .col {
+        
+            span {
+                display: block;
+                padding: calc($unit * 3);
+                border: 1px dotted $color-primary;
+            }
+        }
+
+        &.row, .row {
+            background-color: color($color-primary a(15%));
+        }
+    }
+}
+
+

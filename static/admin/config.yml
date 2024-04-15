@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  repo: shepherd-deploy/website
+  branch: hugo-cms # Branch to update (optional; defaults to master)
+
+media_folder: "static/img/"
+public_folder: "/img"
+
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "content/blog" # The path to the folder where the documents are stored
+    media_folder: "/{{media_folder}}/blog"
+    public_folder: "/img/blog"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Featured image",
+          name: "featuredimage",
+          widget: "image",
+          required: FALSE,
+        }
+      - {
+          label: "Thumbnail image",
+          name: "thumbnailimage",
+          widget: "image",
+          required: TRUE,
+        }
+      - {
+          label: "Hero image",
+          name: "heroimage",
+          widget: "image",
+          required: TRUE,
+        }
+      - { label: "Tags", name: "tags", widget: "list", allow_add: TRUE }
+      - { label: "Sticky", name: "sticky", widget: "boolean" }
+      - {
+          label: "CSS shape class",
+          name: "shapeclass",
+          widget: "select",
+          multiple: FALSE,
+          options:
+            [
+              "union",
+              "square",
+              "circle",
+              "one-corner",
+              "two-corner",
+              "two-corner-up",
+              "half",
+            ],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }

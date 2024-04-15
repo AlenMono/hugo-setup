@@ -1,0 +1,30 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Mono Software'
+
+[params]
+dateformat = "Monday, Jan 2, 2006"
+
+[taxonomies]
+  tag = "tags"
+  category = ""
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
+[related]
+  includeNewer = true
+  threshold = 40
+  toLower = false
+
+  [[related.indices]]
+    name = "title"
+    weight = 40
+
+  [[related.indices]]
+    name = "description"
+    weight = 30
+
+  [[related.indices]]
+    name = "date"
+    weight = 30

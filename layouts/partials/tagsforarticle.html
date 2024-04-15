@@ -1,0 +1,5 @@
+{{ range .Params.tags }}
+    <a class="tags__item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+        {{ . }}
+    </a>
+{{ end }}

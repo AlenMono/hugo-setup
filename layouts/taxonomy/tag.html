@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+<section class="hero hero--primary u-z--1">
+    <div class="hero__container hero__container--med type--center">
+       <h1 class="type--color--negative u-mar--bottom--lrg">The Shepherd Scoop</h1>
+       <p class="type--hero u-mar--bottom--xxlrg type--color--negative">All posts tagged with "{{ .Title }}"</p>
+       <div class="container container--xsml">
+        <div id="searcharea"></div>
+        </div>
+    </div>
+</section>
+
+<main role="main">
+    <div class="container container--base">
+        <section class="section--base">
+
+            {{ range .Data.Pages }}
+            
+            <div class="col col--blog col-sml-12 col-lrg-6 col-xxlrg-4 col-xxxlrg-3 u-mar--bottom--xlrg">
+                <div class="blog__item blog__item u-mar--bottom--med">
+                    <div class="blog__text">
+                        <h3 class="blog__title u-mar--bottom--lrg">{{ .Title }}</h3>
+                        <div class="blog__meta u-mar--bottom--lrg">{{ .Date.Format ( .Site.Params.dateformat | default "Nov 1, 2016") }} BY {{ .Params.author }}</div>
+                        <p class="blog__text__copy u-mar--bottom--lrg">{{ .Description }}</p>
+                        <a href="{{ .Permalink }}" class="btn btn--base btn--primary">Read more <i class="u-icon u-icon--med-lrg u-icon--more u-mar--left--med"></i></a>
+                    </div>
+                    <div class="blog__image mask--{{ .Params.shapeclass }}" alt="{{ .Title }}" style="background-image: url('{{ .Params.thumbnailimage }}');"></div>
+                </div>
+                <div class="blog__item__metadata">
+                    {{ range .Params.tags }}
+                    <a class="tags__item" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                     <small>{{ if lt (math.Round (div (countwords .Content) 250.0)) 1 }}1{{ else }}{{ (math.Round (div (countwords .Content) 250.0)) }}{{ end }} Min Read</small>
+                </div>
+            </div>
+
+            {{ end }}
+
+        </div>
+        {{ partial "pagination" . }}
+        </section>
+    </div>
+</div>
+
+</main>
+
+{{ end }}
+
+
+
+

@@ -1,0 +1,30 @@
+<div class="u-display--flex--jc--space-between">
+  <h2 class="u-type--xlrg u-type--bold">More From Our Blog</h2>
+
+  <div class="u-separator--primary u-mar--top--sml u-mar--bottom--xlrg"></div>
+
+  <div class="row">
+    {{ $related := .Site.RegularPages.Related . }} {{ $cnt := 0 }} {{ range
+    first 3 $related}} {{ if eq $cnt 2 }}
+    <div class="col col-sml-12 col-med-6 col-lrg-4">
+      {{ else }}
+      <div class="col col-sml-12 col-med-6 col-lrg-4 u-mar--bottom--sml">
+        {{ end }}
+        <article>
+          <img
+            class="c-blog__list__image"
+            src="{{ .Params.thumbnailimage }}"
+            alt=""
+          />
+          <div class="u-display--flex u-display--flex--ai--center">
+            <a class="u-type--color--text" href="{{ .Permalink }}">
+              {{ .Title }}
+              <i class="u-icon u-icon--base u-icon--keyboard-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

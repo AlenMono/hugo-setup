@@ -1,0 +1,105 @@
+<head>
+  <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description }}" />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/img/favicon/apple-icon-180x180.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/img/favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/img/favicon/favicon-16x16.png"
+  />
+  <link
+    rel="mask-icon"
+    href="/img/favicon/safari-pinned-tab.svg"
+    color="#005bff"
+  />
+  <link rel="stylesheet" href="https://use.typekit.net/jqv4ihi.css" />
+  <link
+    rel="stylesheet"
+    href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css"
+  />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    property="og:title"
+    content="{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}"
+  />
+  <meta property="og:description" content="{{ .Description }}" />
+  <meta property="og:url" content="{{ .Permalink | absURL }}" />
+  {{ if isset .Params "thumbnailimage" }}
+  <meta property="og:image" content="{{ .Params.thumbnailimage | absURL }}" />
+  <meta
+    property="twitter:image"
+    content="{{ .Params.thumbnailimage | absURL }}"
+  />
+  {{ end }}
+  <meta name="twitter:card" content="summary_large_image" />
+
+    {{ $mod := resources.Get "js/modernizr.custom.min.js" }}
+  <script src="{{ $mod.RelPermalink }}"></script>
+
+  {{ $style := resources.Get "postcss/app.css" | resources.PostCSS (dict
+  "config" "./postcss.config.js" "inlineImports" true) }}
+  <link
+    rel="stylesheet"
+    href="{{ $style.RelPermalink }}"
+    integrity="{{ $style.Data.Integrity }}"
+  />
+  
+{{ if isset .Params "scripts" }}
+{{ range .Params.scripts }}
+<script src="{{ printf "%s" . | absURL }}"></script>
+{{ end }}
+{{ end }}
+{{ if isset .Params "asyncdeferscripts" }}
+{{ range .Params.asyncDeferScripts }}
+<script defer async src="{{ printf "%s" . | absURL }}"></script>
+{{ end }}
+{{ end }}
+{{ if isset .Params "css" }}
+{{ range .Params.css }}
+<link rel="stylesheet" href="{{ printf "%s" . | absURL }}" />
+{{ end }}
+{{ end }}
+  
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
+      experience.
+    </p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!-- keep width for all viewport sizes -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-5Z5Z6HZ"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</head>

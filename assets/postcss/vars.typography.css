@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    # vars.typography
+\*------------------------------------*/
+
+/**
+ * Project base line height
+ */
+$base-line-height: 24px;
+
+$type-tiny:     12px;
+$type-small:    14px;
+$type-base:     18px;
+$type-medium:   23px;
+$type-large:    28px;
+$type-xlarge:   35px;
+$type-xxlarge:  44px;
+$type-xxxlarge: 55px;
+$type-xxxxlarge: 69px;
+
+/**
+* Type weights
+*/
+$type-weight-light:      300;
+$type-weight-regular:    400;
+$type-weight-bold:       700;
+
+/**
+* Font stacks
+*/
+$ff-sans: 	'National 2', -apple-system, BlinkMacSystemFont,
+			"Segoe UI", "Roboto", "Oxygen",
+			"Ubuntu", "Cantarell", "Fira Sans",
+			"Droid Sans", "Helvetica Neue",
+			Helvetica, Arial, sans-serif;
+$ff-serif:	Georgia, Times, serif;

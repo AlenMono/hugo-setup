@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    # component.footer
+\*------------------------------------*/
+
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        padding: calc($unit * 13) calc($unit * 9);
+    }
+
+    &__item {
+        font-size: responsive $type-tiny $type-small;
+        font-range: 320px 1440px;
+
+        line-height: responsive 16px 20px;
+        line-height-range: 320px 1440px;
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        padding: calc($unit * 4) calc($unit * 9);
+    }
+}

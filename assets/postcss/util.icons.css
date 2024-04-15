@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    # utils.icon
+\*------------------------------------*/
+
+.u {
+    &-icon {
+        display: inline-block;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        vertical-align: middle;
+
+        &--sml {
+            width: calc($unit * 2);
+            height: calc($unit * 2);
+        }
+
+        &--med {
+            width: calc($unit * 4);
+            height: calc($unit * 4);
+        }
+
+        &--lrg {
+            width: calc($unit * 6);
+            height: calc($unit * 6);
+        }
+
+        &--xxlrg {
+            width: calc($unit * 12);
+            height: calc($unit * 12);
+        }
+
+        &--logo {
+            background-image: svg-load('../postcss-svg/search.svg', fill: color($color-primary a(0.5)));
+        }
+
+        &--deloitte {
+            background-image: svg-load('../postcss-svg/deloitte.svg', stroke: #5DAFAF);
+        }
+
+        &--microsoft {
+            background-image: svg-load('../postcss-svg/microsoft.svg', stroke: $color-primary);
+        }
+
+        &--eba {
+            background-image: svg-load('../postcss-svg/eba.svg', stroke: #FFBF1F);
+        }
+
+        &--clutch {
+            background-image: svg-load('../postcss-svg/clutch.svg', stroke: $color-secondary);
+        }
+    }
+}

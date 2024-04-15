@@ -1,0 +1,146 @@
+/*------------------------------------*\
+    # util.margins
+\*------------------------------------*/
+
+/** 
+* you can use custom multiplyer for huge spacing
+* $custom: 15;
+
+* You can use spacers by axis 
+---------------------------------
+--   x-axis ->  left & right   --
+--   y-axis ->  top & bottom   --  
+---------------------------------
+*/
+
+.u {
+    &-mar {
+        &--top {
+            &--tny {
+                margin-top: calc($unit * 2);
+            }
+
+            &--sml {
+                margin-top: calc($unit * 4);
+            }
+
+            &--med {
+                margin-top: calc($unit * 6);
+            }
+
+            &--lrg {
+                margin-top: calc($unit * 8);
+            }
+
+            &--xlrg {
+                margin-top: calc($unit * 10);
+            }
+
+            &--xxlrg {
+                margin-top: calc($unit * 12);
+            }
+
+            &--xxxlrg {
+                margin-top: calc($unit * 14);
+            }
+        }
+
+        &--right {
+            &--tny {
+                margin-right: calc($unit * 2);
+            }
+
+            &--sml {
+                margin-right: calc($unit * 4);
+            }
+
+            &--med {
+                margin-right: calc($unit * 6);
+            }
+
+            &--lrg {
+                margin-right: calc($unit * 8);
+            }
+
+            &--xlrg {
+                margin-right: calc($unit * 10);
+            }
+
+            &--xxlrg {
+                margin-right: calc($unit * 12);
+            }
+
+            &--xxxlrg {
+                margin-right: calc($unit * 14);
+            }
+        }
+
+        &--bottom {
+            &--tny {
+                margin-bottom: calc($unit * 2);
+            }
+
+            &--xsml {
+                margin-bottom: calc($unit * 1.5);
+            }
+
+            &--sml {
+                margin-bottom: calc($unit * 4);
+            }
+
+            &--med {
+                margin-bottom: calc($unit * 6);
+            }
+
+            &--lrg {
+                margin-bottom: calc($unit * 8);
+            }
+
+            &--xlrg {
+                margin-bottom: calc($unit * 10);
+            }
+
+            &--xxlrg {
+                margin-bottom: calc($unit * 12);
+            }
+
+            &--xxxlrg {
+                margin-bottom: calc($unit * 14);
+            }
+        }
+
+        &--left {
+            &--tny {
+                margin-left: calc($unit * 2);
+            }
+
+            &--xsml {
+                margin-left: calc($unit * 1.5);
+            }
+
+            &--sml {
+                margin-left: calc($unit * 4);
+            }
+
+            &--med {
+                margin-left: calc($unit * 6);
+            }
+
+            &--lrg {
+                margin-left: calc($unit * 8);
+            }
+
+            &--xlrg {
+                margin-left: calc($unit * 10);
+            }
+
+            &--xxlrg {
+                margin-left: calc($unit * 12);
+            }
+
+            &--xxxlrg {
+                margin-left: calc($unit * 14);
+            }
+        }
+    }
+}

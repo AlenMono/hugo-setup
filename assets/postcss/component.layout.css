@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    # component.layout
+\*------------------------------------*/
+
+$aside-width: 180px;
+$nav-height: 82px;
+
+.l {
+    &__wrapper {
+        position: relative;
+    }
+    
+    &__aside {
+        overflow-y: auto;
+        position: fixed;
+        top: $nav-height;
+        left: 0;
+        bottom: 0;
+        width: $aside-width;
+        border-right: 1px solid $grey-2;
+    }
+
+    &__content {
+        padding-left: $aside-width;
+    }
+}
