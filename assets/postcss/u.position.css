@@ -1,0 +1,25 @@
+/*------------------------------------*\
+    # utils.position
+\*------------------------------------*/
+
+.u-position {
+	&--stc {
+		position: static;
+	}
+
+	&--stk {
+		position: sticky;
+	}
+
+	&--rel {
+		position: relative;
+	}
+
+	&--fix {
+		position: fixed;
+	}
+	
+	&--abs {
+		position: absolute;
+	}
+}

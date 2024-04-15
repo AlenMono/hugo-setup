@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    # utils.overflow
+\*------------------------------------*/
+
+.u-overflow {
+    &--x-scroll {
+        overflow-x: scroll;
+    }
+  
+    &--y-scroll {
+        overflow-y: scroll;
+    }
+
+    &--hidden {
+        overflow: hidden;
+    }
+
+    &--auto {
+        overflow: auto;
+    }
+}

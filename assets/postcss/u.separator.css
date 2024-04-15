@@ -1,0 +1,29 @@
+/*------------------------------------*\
+    # utils.separator
+    * use separators exclusively on <
+    *div> elements
+\*------------------------------------*/
+
+.u-separator {
+    &--primary {
+        border-bottom: 1px solid color($color-text-light a(0.3));
+
+        margin-bottom: calc($unit * 3);
+        margin-top: calc($unit * 3);
+        
+        @media (--screen-from-lrg) {
+            margin-bottom: calc($unit * 4);
+            margin-top: calc($unit * 4);
+        }
+        
+        &--sml {
+            margin: calc($unit * 3) 0;               
+        }
+    }
+
+    &--last {
+        &:last-child {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

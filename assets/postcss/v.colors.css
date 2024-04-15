@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    # vars.colors
+\*------------------------------------*/
+
+/**
+* Generic colors
+* Color naming taken from: http://www.color-blindness.com/color-name-hue/
+*/
+
+/**
+ * Light mode colors
+ */
+ $body-background: #EAF1F5;
+ $color-text-light: #f5f5f5;
+ $color-text-dark: #272829;
+ 
+ $color-primary: #C99F71;
+ $color-secondary: #339dff;
+ $color-tertiary: #ffb238;
+ 
+ $color-border: #747474;
+ $color-border-primary: #99ceff;
+ 
+ /**
+  * Utility colors
+  */
+ $color-warning: #f44336;
+ $color-success: #9dcc66;
+ $color-note: #ff9e2c;
+ $white: #f5f5f5;
+ 
+ /*
+     Shades of gray (pure gray)
+     ------------------------------------
+     If you need mix some color to gray, use 10% of saturated color
+ */
+ $grey-1: #f0f0f0; /*  6% - lightness */
+ $grey-2: #d4d4d4; /* 17% - lightness */
+ $grey-3: #b8b8b8; /* 28% - lightness */
+ $grey-4: #9c9c9c; /* 39% - lightness */
+ $grey-5: #7f7f7f; /* 50% - lightness */
+ $grey-6: #636363; /* 61% - lightness */
+ $grey-7: #474747; /* 72% - lightness */
+ $grey-8: #2b2b2b; /* 83% - lightness */
+ $grey-9: #0f0f0f; /* 94% - lightness */

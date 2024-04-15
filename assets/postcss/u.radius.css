@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    # utils.radius
+\*------------------------------------*/
+
+.u-radius {
+    &--base {
+        border-radius: $radius-base;
+    }
+
+    &--full {
+        border-radius: $radius-full;
+    }
+}

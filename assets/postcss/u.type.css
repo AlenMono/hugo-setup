@@ -1,0 +1,177 @@
+/*------------------------------------*\
+    # utils.type
+\*------------------------------------*/
+
+.u-type {
+    /**
+     * Font letterform
+     */
+    &--sans {
+        font-family: $ff-sans;
+    }
+
+    &--serif {
+        font-family: $ff-serif;
+    }
+
+    /**
+     * Font sizes
+     */
+    &--tny {
+        font-size: $type-tny;
+        line-height: 16px;
+    }
+
+    &--sml {
+        font-size: $type-sml;
+        line-height: 20px;
+    }
+
+    &--base {
+        font-size: responsive $type-sml $type-base;
+        font-range: 320px 1440px;
+
+        line-height: responsive 20px 24px;
+        line-height-range: 320px 1440px;
+    }
+
+    &--med {
+        font-size: responsive $type-base $type-med;
+        font-range: 320px 1440px;
+
+        line-height: responsive 28px 32px;
+        line-height-range: 320px 1440px;
+    }
+
+    &--lrg {
+        font-size: responsive $type-med $type-lrg;
+        font-range: 320px 1440px;
+
+        line-height: responsive 32px 40px;
+        line-height-range: 320px 1440px;
+    }
+
+    &--xlrg {
+        font-size: responsive $type-lrg $type-xlrg;
+        font-range: 320px 1440px;
+
+        line-height: responsive 40px 44px;
+        line-height-range: 320px 1440px;
+    }
+
+    /**
+     * Font weights
+     */
+    &--wgt {
+        &--regular {
+            font-weight: $type-weight-regular;
+        }
+
+        &--semibold {
+            font-weight: $type-weight-semibold;
+        }
+
+        &--bold {
+            font-weight: $type-weight-bold;
+        }
+    }
+
+    &--style {
+        &--italic {
+            font-style: italic;
+        }
+        &--normal {
+            font-style: normal;
+        }
+        &--oblique {
+            font-style: oblique;
+        }
+    }
+
+    /**
+     * Type colors
+     */
+    &--color {
+        &--text {
+            color: $color-text-light;
+        }
+
+        &--opaque {
+            color: color(#fff a(0.6));
+        }
+
+        &--primary {
+            color: $color-primary;
+        }
+
+        &--secondary {
+            color: $color-secondary;
+        }
+
+        &--tertiary {
+            color: $color-tertiary;
+        }
+
+        &--negative {
+            color: white;
+        }
+
+        &--warning {
+            color: $color-warning;
+        }
+
+        &--success {
+            color: $color-success;
+        }
+
+        &--note {
+            color: $color-note;
+        }
+    }
+
+    &--link {
+        display: inline-block;
+
+        color: $color-primary;
+        cursor: pointer;
+        transition: 250ms all ease-in-out;
+
+        &:hover {
+            color: color(#f33fff a(0.8));
+        }
+    }
+
+    /**
+     * Type case
+     */
+    &--uppercase {
+        text-transform: uppercase;
+    }
+
+    &--lowercase {
+        text-transform: lowercase;
+    }
+
+    &--narrow {
+        letter-spacing: 0.0625em;
+    }
+
+    &--wide {
+        letter-spacing: 0.125em;
+    }
+
+    /**
+     * Type positioning
+     */
+    &--center {
+        text-align: center;
+    }
+
+    &--left {
+        text-align: left;
+    }
+
+    &--right {
+        text-align: right;
+    }
+}

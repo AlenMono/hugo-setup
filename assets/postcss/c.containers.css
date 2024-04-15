@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    # component.container
+\*------------------------------------*/
+
+.c-container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    /*make container stretch from one side to another*/
+    &--fluid {
+        width: 100%;
+        margin: 0;
+    }
+
+    &--sml {
+    	max-width: 768px;
+    }
+
+    &--xlrg {
+        max-width: 2048px;
+        margin: 0 auto;
+    }
+}
+

@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    # component.layout
+\*------------------------------------*/
+
+.c-layout {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: calc($unit * 6) calc($unit * 20);
+
+        background-color: $white;
+    }
+}

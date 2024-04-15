@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    # utils.icon
+\*------------------------------------*/
+.u-icon {
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    vertical-align: middle;
+    background-size: contain;
+
+    transition: all 250ms ease-out;
+
+    &--sml {
+        min-width: calc($unit * 2);
+        height: calc($unit * 2);
+    }
+
+    &--base {
+        width: calc($unit * 3);
+        height: calc($unit * 3);
+        background-size: calc($unit * 3);
+    }
+
+    &--med {
+        min-width: calc($unit * 4);
+        height: calc($unit * 4);
+        background-size: calc($unit * 4);
+    }
+
+    &--lrg {
+        width: calc($unit * 6);
+        height: calc($unit * 6);
+    }
+
+    &--xlrg {
+        width: calc($unit * 8);
+        height: calc($unit * 8);
+    }
+
+    &--xxlrg {
+        width: calc($unit * 12);
+        height: calc($unit * 12);
+    }
+
+    &--huge {
+        width: calc($unit * 25);
+        height: calc($unit * 25);
+    }
+
+    &--search {
+        background-image: svg-load('../postcss-svg/defaults/icon--search.svg', stroke: #333);
+    }
+}

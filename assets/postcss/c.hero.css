@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    # component.hero
+\*------------------------------------*/
+
+.c-hero {
+    &--home {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        /* padding-top: calc($unit * 32); */
+        padding-top: calc($unit * 22);
+
+        width: 50%;
+        height: calc(100vh - calc($unit * 21));
+
+        overflow: hidden;
+
+        &__label {
+            margin-bottom: calc($unit * 6);
+
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.125em;
+        }
+
+        &__title {
+            width: 70%;
+            margin-bottom: calc($unit * 20);
+
+            font-size: 64px;
+            line-height: 72px;
+            font-weight: $type-weight-semibold;
+            text-align: center;
+        }
+        
+        &--light {
+            /* font-family: "Source Serif 4"; */
+        }
+
+        &--dark {
+            color: $white;
+            background: linear-gradient(163.27deg, #393c42 5.36%, #262729 56.32%);
+        }
+    }
+}
