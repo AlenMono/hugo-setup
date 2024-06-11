@@ -4,7 +4,9 @@
         align-items: center;
         gap: calc($unit * 14);
 
-        height: calc(100vh - calc($unit * 30));
+        min-height: calc(100vh - calc($unit * 30));
+
+        padding: calc($unit * 20) calc($unit * 10);
     }
 
     &__info {

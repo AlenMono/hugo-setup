@@ -37,6 +37,27 @@
             background-image: svg-load('assets/postcss-svg/logo.svg');
         }
 
+        &--lines {
+            width: 420px;
+            height: 100%;
+
+            background-image: svg-load('assets/postcss-svg/lines.svg');
+
+            &--left {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &--right {
+                position: absolute;
+                right: 0;
+                top: 0;
+                
+                transform: rotate(-180deg);
+            }
+        }
+
         &--customer-engagement {
             background-image: svg-load('assets/postcss-svg/use-cases/customer-engagement.svg');
         }
