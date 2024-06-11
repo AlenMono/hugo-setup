@@ -4,7 +4,7 @@ description: Mono designs and develops world-class software products and service
 ---
 
 <main role="main">
-    <div class="container container--base">
+    <div class="container container--lrg">
         <div class="c-hero__wrapper">
             <div class="c-hero__info">
                 <h1 class="c-hero__title">Conversational AI Platform for Knowledge Sharing</h1>
@@ -16,7 +16,12 @@ description: Mono designs and develops world-class software products and service
                 </div>
             </div>
 
-            <div class="c-hero__media">video</div>
+            <div class="c-hero__media">
+                <video autoplay muted loop>
+                    <source src="/video/dokko-hero.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
         </div>
     </div>
 
@@ -73,58 +78,58 @@ description: Mono designs and develops world-class software products and service
             </div>
 
             <div class="row u-gap--y--xxlrg">
-                {{< caseCard 
+                {{< caseCard
                     icon="customer-engagement"
-                    title="Customer Engagement" 
-                    description="Instant support on your service pages enhances customer satisfaction and reduces wait times." 
+                    title="Customer Engagement"
+                    description="Instant support on your service pages enhances customer satisfaction and reduces wait times."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="feedback-collection"
-                    title="Feedback Collection" 
-                    description="Direct engagement through Dokko helps refine products with real user insights." 
+                    title="Feedback Collection"
+                    description="Direct engagement through Dokko helps refine products with real user insights."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="employee-onboarding"
-                    title="Employee Onboarding" 
-                    description="Speed up training with immediate access to materials and guidelines." 
+                    title="Employee Onboarding"
+                    description="Speed up training with immediate access to materials and guidelines."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="diagnostics"
-                    title="Diagnostic and Treatment Support" 
-                    description="The AI assistant processes complex medical information and suggests potential treatment plans, helping doctors optimize care delivery and patient outcomes." 
+                    title="Diagnostic and Treatment Support"
+                    description="The AI assistant processes complex medical information and suggests potential treatment plans, helping doctors optimize care delivery and patient outcomes."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="insurance"
-                    title="Insurance Claims Processing" 
-                    description="Automate initial assessments and guide customers through the claims process with real-time AI support, reducing processing times and enhancing customer experience." 
+                    title="Insurance Claims Processing"
+                    description="Automate initial assessments and guide customers through the claims process with real-time AI support, reducing processing times and enhancing customer experience."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="legal-consultations"
-                    title="Legal Consultations" 
-                    description="Offer preliminary legal advice and document reviews directly through the chatbot, improving client engagement and streamlining case intake procedures." 
+                    title="Legal Consultations"
+                    description="Offer preliminary legal advice and document reviews directly through the chatbot, improving client engagement and streamlining case intake procedures."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="compliance-training"
-                    title="Compliance Training" 
-                    description="Provide easy access to updated regulatory policies and guidelines." 
+                    title="Compliance Training"
+                    description="Provide easy access to updated regulatory policies and guidelines."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="safety-protocols"
-                    title="Safety Protocols" 
-                    description="Quickly spread critical safety information, essential in sectors like manufacturing or healthcare." 
+                    title="Safety Protocols"
+                    description="Quickly spread critical safety information, essential in sectors like manufacturing or healthcare."
                 >}}
-              
-                {{< caseCard 
+
+                {{< caseCard
                     icon="project-management"
-                    title="Project Management" 
-                    description="Maintain project details and updates at your fingertips, simplifying coordination." 
+                    title="Project Management"
+                    description="Maintain project details and updates at your fingertips, simplifying coordination."
                 >}}
             </div>
         </div>
@@ -132,18 +137,21 @@ description: Mono designs and develops world-class software products and service
 
     <div class="container--dark" id="#about">
         <div class="container container--lrg">
-            {{< aboutSection 
-                title="Deploy effortlessly" 
-                description="Deploy Dokko in seconds with a single line of JavaScript. Customize extensively to match your brand, enhancing your digital platforms with AI-driven knowledge sharing." 
+            {{< aboutSection
+                videoSrc="video/dokko-deploy.mp4"
+                title="Deploy & Customize"
+                description="Deploy Dokko in seconds with a single line of JavaScript. Customize extensively to match your brand, enhancing your digital platforms with AI-driven knowledge sharing."
             >}}
-            {{< aboutSection 
+            {{< aboutSection
+                videoSrc="video/dokko-control.mp4"
                 additionalClass="c-about__wrapper--secondary"
-                title="Take Control" 
-                description="Monitor interactions in real time to ensure Dokko meets performance standards and maintains information accuracy. Intervene manually when necessary to provide human expertise." 
+                title="Take Control"
+                description="Monitor interactions in real time to ensure Dokko meets performance standards and maintains information accuracy. Intervene manually when necessary to provide human expertise."
             >}}
-            {{< aboutSection 
-                title="Track Performance" 
-                description="Dokko tracks and improves interaction quality, continuously suggesting enhancements for your knowledge base." 
+            {{< aboutSection
+                videoSrc="video/dokko-tracking.mp4"
+                title="Track Performance"
+                description="Dokko tracks and improves interaction quality, continuously suggesting enhancements for your knowledge base."
             >}}
         </div>
     </div>
@@ -161,15 +169,15 @@ description: Mono designs and develops world-class software products and service
                 <div class="col col-sml-12 col-lrg-6">
                     <p>Dokko uses Retrieval-Augmented Generation (RAG) for precise, contextually relevant answers:</p>
                 </div>
-                <div class="col col-sml-12 col-lrg-6">  
+                <div class="col col-sml-12 col-lrg-6">
                     <div class="row">
                         <div class="col col-sml-12 col-lrg-6">
-                            <p class="u-type--tny u-type--wgt--bold">Answer Generation</p>
-                            <p class="u-type--tny">Uses this data to craft detailed, accurate responses, achieving a level of personalization that standard models can't match.</p>
+                            <p class="u-type--sml u-type--wgt--bold">Answer Generation</p>
+                            <p class="u-type--sml">Uses this data to craft detailed, accurate responses, achieving a level of personalization that standard models can't match.</p>
                         </div>
                         <div class="col col-sml-12 col-lrg-6">
-                            <p class="u-type--tny u-type--wgt--bold">Information Retrieval</p>
-                            <p class="u-type--tny">Quickly finds the most relevant data for user queries using state-of-the-art hybrid techniques</p>
+                            <p class="u-type--sml u-type--wgt--bold">Information Retrieval</p>
+                            <p class="u-type--sml">Quickly finds the most relevant data for user queries using state-of-the-art hybrid techniques</p>
                         </div>
                     </div>
                 </div>

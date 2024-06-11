@@ -16,7 +16,7 @@
 
         max-width: 667px;
     }
-    
+
     &__title {
         color: $color-text-secondary;
 
@@ -26,9 +26,9 @@
     }
 
     &__media {
-        width: 457px;
-        height: 616px;
-
-        border: 1px solid $color-primary;
+        video {
+            width: 534px;
+            height: 1180px;
+        }
     }
 }

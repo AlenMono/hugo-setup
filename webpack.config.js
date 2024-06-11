@@ -2,7 +2,7 @@ var path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: ["./assets/js/search.js", "./assets/js/app.js"],
+  entry: [ "./assets/js/app.js"],
   module: {
     rules: [
       {

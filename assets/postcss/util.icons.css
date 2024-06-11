@@ -30,6 +30,11 @@
             height: calc($unit * 12);
         }
 
+        &--case {
+            width: calc($unit * 18);
+            height: calc($unit * 18);
+        }
+
         &--logo {
             width: calc($unit * 25);
             height: calc($unit * 7);
@@ -53,7 +58,7 @@
                 position: absolute;
                 right: 0;
                 top: 0;
-                
+
                 transform: rotate(-180deg);
             }
         }
