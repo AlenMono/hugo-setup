@@ -54,6 +54,7 @@
 @import "component.footer.css";
 @import "component.hero.css";
 @import "component.card.css";
+@import "component.about.css";
 
 /**
 * Views .......... specific website/app views (example: 404 view, login view)

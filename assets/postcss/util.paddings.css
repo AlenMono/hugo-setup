@@ -167,16 +167,20 @@
         }
         &--y {
             &--sml {
-                padding: calc($unit * 2) inherit; 
+                padding-top: calc($unit * 2); 
+                padding-bottom: calc($unit * 2); 
             }
             &--med {
-                padding: calc($unit * 4) inherit; 
+                padding-top: calc($unit * 4); 
+                padding-bottom: calc($unit * 4); 
             }
             &--lrg {
-                padding: calc($unit * 6) inherit; 
+                padding-top: calc($unit * 6); 
+                padding-bottom: calc($unit * 6); 
             }
             &--xlrg {
-                padding: calc($unit * 8) inherit; 
+                padding-top: calc($unit * 8); 
+                padding-bottom: calc($unit * 8); 
             }
             &--xxlrg {
                 padding-top: calc($unit * 20);

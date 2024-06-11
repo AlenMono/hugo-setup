@@ -89,11 +89,11 @@
             }
 
             &--sml {
-                margin-bottom: calc($unit * 4);
+                margin-bottom: calc($unit * 3);
             }
 
             &--med {
-                margin-bottom: calc($unit * 6);
+                margin-bottom: calc($unit * 4);
             }
 
             &--lrg {

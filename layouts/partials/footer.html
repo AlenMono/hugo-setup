@@ -1,12 +1,16 @@
-<footer  role="contentinfo">
-  <!-- Call to action -->
-  <div>
-         
-  </div>
+<footer role="contentinfo">
+    <div class="container--light-06">
+        <div class="container container--lrg">
+            <div class="flex justify-between items-center u-padd--y--med">
+                <p class="u-type--sml">Copyright © 2003 - {{ now.Format "2006"}} Mono</p>
 
-  <!-- Footer body -->
-  <div>
-  </div>
+                <p class="u-type--sml flex u-gap--lrg">
+                    <a class="u-type--link--dark" href="/privacy-policy">Privacy Policy</a>
+                    <a class="u-type--link--dark" href="/terms-of-use">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 {{ $js := resources.Get "js/bundle.js" }}
