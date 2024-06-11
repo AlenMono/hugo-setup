@@ -9,18 +9,18 @@
 html {
     height: 100%;
     font-size: responsive;
-    /* scroll-behavior: smooth; */
 }
 
 body {
     min-height: 100%;
     overflow-x: hidden;
     margin: 0;
+
     background: $background;
+    color: $color-text;
 
     font-family: $ff-sans;
     line-height: 1.5;
-    color: white;
 }
 
 img {

@@ -73,6 +73,8 @@
 @import "util.icons.css";
 @import "util.radius.css";
 @import "util.visibility.css";
+@import "util.flex.css";
+@import "util.gap.css";
 
 /**
 * Plugins .......... 3rd party code, external plugin CSS etc

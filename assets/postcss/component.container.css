@@ -10,6 +10,10 @@
         max-width: 768px;
     }
 
+    &--base {
+        max-width: 1180px;
+    }
+
     &--lrg {
         max-width: 1440px;
     }
