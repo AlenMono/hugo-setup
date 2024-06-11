@@ -71,12 +71,12 @@
     }
 
     &--secondary {
-        background: $color-secondary;
+        background: $color-text-secondary;
         color: white;
         border: 1px solid transparent;
 
         &:hover {
-            background: color($color-secondary blackness(+10%));
+            background: color($color-text-secondary blackness(+10%));
         }
     }
 

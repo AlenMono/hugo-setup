@@ -23,10 +23,18 @@ $grey-8: #2b2b2b;  /* 83% - lightness */
 $grey-9: #0f0f0f;  /* 94% - lightness */
 
 /* Light mode colors */
-$background: #121212;
-$color-text: #121212;
-$color-primary: #CC314D;
-$color-secondary: #0457AA;
+$background: #F9F5FF;
+
+$color-text: #0F002D;
+$color-text-secondary: #23006E;
+
+$color-primary: #5003F4;
+$color-primary-02: #A77EFF;
+$color-primary-04: #DDCDFE;
+
+$color-primary-dark: #19014C;
+
+
 $white: #ffffff;
 
 /**

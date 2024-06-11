@@ -121,7 +121,7 @@ pre {}
 code {
     background-color: color($color-text lightness(+80%));
     padding: calc($unit / 2);
-    color: $color-secondary;
+    color: $color-text-secondary;
 }
 sub {}
 sup {}

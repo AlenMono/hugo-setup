@@ -7,34 +7,10 @@
     margin: 0 auto;
 
     &--sml {
-    	max-width: 768px;
+        max-width: 768px;
     }
 
-    &--base {
+    &--lrg {
         max-width: 1440px;
-        padding: calc($unit * 10) calc($unit * 9);
-
-        @media (--screen-from-lrg) {
-            margin: calc($unit * 10) auto;
-        }
-    }
-
-    &--header {
-        max-width: 1440px;
-    }
-
-    &--footer {
-        max-width: 1440px;
-    }
-
-    &--contact {
-        padding: calc($unit * 6);
-
-        background-color: $white;
-        border-radius: $radius-base;
-
-        @media (--screen-from-med) {
-            padding: calc($unit * 20);
-        }
     }
 }

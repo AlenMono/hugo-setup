@@ -17,21 +17,5 @@
         &--px {
             width: 100px;
         }
-
-        &--from {
-            &-med {
-                @media (--screen-from-med) {
-                    width: 100%;
-                }
-            }
-        }
-
-        &--to {
-            &-lrg {
-                @media (--screen-to-lrg) {
-                    width: 100%;
-                }
-            }
-        }
     }
 }

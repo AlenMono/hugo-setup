@@ -31,23 +31,8 @@
         }
 
         &--logo {
-            background-image: svg-load('../postcss-svg/search.svg', fill: color($color-primary a(0.5)));
-        }
-
-        &--deloitte {
-            background-image: svg-load('../postcss-svg/deloitte.svg', stroke: #5DAFAF);
-        }
-
-        &--microsoft {
-            background-image: svg-load('../postcss-svg/microsoft.svg', stroke: $color-primary);
-        }
-
-        &--eba {
-            background-image: svg-load('../postcss-svg/eba.svg', stroke: #FFBF1F);
-        }
-
-        &--clutch {
-            background-image: svg-load('../postcss-svg/clutch.svg', stroke: $color-secondary);
+            background-image: svg-load('../postcss-svg/logo.svg', fill: $color-primary);
+            height: calc($unit * 7);
         }
     }
 }

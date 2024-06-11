@@ -8,13 +8,9 @@
 .u {
     &-separator {
         &--primary {
+            margin: calc($unit * 2) 0;
+            
             border-bottom: 1px solid color($color-text lightness(+55%));
-        }
-
-        &--last {
-            &:last-child {
-                border-bottom: 1px solid transparent;
-            }
         }
     }
 }

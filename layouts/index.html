@@ -2,37 +2,10 @@
 <div>
   <header role="banner" data-scroll-section>
     <!-- Navigation section START -->
-    <div data-scroll data-scroll-sticky class="container container--header">
-      <div class="header__wrapper">{{ partial "navigation.html" . }}</div>
-    </div>
     <!-- Navigation section END -->
 
     <!-- Hero section START -->
-    <div data-scroll class="container container--base">
-      <div class="hero__wrapper">
-        <div class="indicator">
-          <span class="indicator__first u-type--sml">02</span>
-          <span class="indicator__line">
-            <span class="indicator__current"></span>
-          </span>
-          <span class="indicator__last u-type--sml">05</span>
-        </div>
-        <h1 class="hero__title">
-          We create <span id="asyncExec" class="hero__title--ml"></span>
-          <span id="asyncExec2" class="hero__title--ml"></span>
-        </h1>
-
-        <lottie-player
-          class="hero__more"
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets5.lottiefiles.com/private_files/lf30_4F41H1.json"
-          style="height: 60px"
-        >
-        </lottie-player>
-      </div>
-    </div>
+    
     <!-- Hero section END -->
   </header>
   {{ .Content }}
