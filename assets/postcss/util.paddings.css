@@ -186,6 +186,10 @@
                 padding-top: calc($unit * 20);
                 padding-bottom: calc($unit * 20);
             }
+            &--xxxlrg {
+                padding-top: calc($unit * 30);
+                padding-bottom: calc($unit * 30);
+            }
         }
     }
 }
