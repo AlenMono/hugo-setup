@@ -1,17 +1,43 @@
-.gap {
+.u-gap {
     &--sml {
-        gap: $unit
+        gap: $unit;
     }
-    
+
     &--base {
-        gap: calc($unit * 2)
+        gap: calc($unit * 2);
     }
 
     &--med {
-        gap: calc($unit * 3)
+        gap: calc($unit * 3);
     }
 
     &--lrg {
-        gap: calc($unit * 4)
+        gap: calc($unit * 4);
+    }
+
+    &--y {
+        &--sml {
+            row-gap: $unit;
+        }
+
+        &--base {
+            row-gap: calc($unit * 2);
+        }
+
+        &--med {
+            row-gap: calc($unit * 3);
+        }
+
+        &--lrg {
+            row-gap: calc($unit * 4);
+        }
+
+        &--xlrg {
+            row-gap: calc($unit * 6);
+        }
+
+        &--xxlrg {
+            row-gap: calc($unit * 7);
+        }
     }
 }

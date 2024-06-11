@@ -178,6 +178,10 @@
             &--xlrg {
                 padding: calc($unit * 8) inherit; 
             }
+            &--xxlrg {
+                padding-top: calc($unit * 20);
+                padding-bottom: calc($unit * 20);
+            }
         }
     }
 }

@@ -7,7 +7,7 @@
     margin: 0 auto;
 
     &--sml {
-        max-width: 768px;
+        max-width: 900px;
     }
 
     &--base {
@@ -16,5 +16,14 @@
 
     &--lrg {
         max-width: 1440px;
+    }
+
+    &--dark {
+        background-color: $color-text;
+        color: $white;
+    }
+
+    &--light-06 {
+        background-color: $color-primary-06;
     }
 }

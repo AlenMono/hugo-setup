@@ -1,0 +1,33 @@
+.c-card {
+    /* SIZE */
+    &--sml {
+        padding: calc($unit * 2);
+    }
+
+    &--base {
+        padding: calc($unit * 3);
+    }
+
+    &--med {
+        padding: calc($unit * 4);
+    }
+
+    &--lrg {
+        padding: calc($unit * 5);
+    }
+
+    &--xlrg {
+        padding: calc($unit * 6);
+    }
+
+    &--rounded {
+        &--sml {
+            border-radius: calc($unit * 2);
+        }
+    }
+
+    /* COLORS */
+    &--primary {
+        background-color: $color-primary-dark;
+    }
+}

@@ -1,0 +1,32 @@
+.c-hero {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: calc($unit * 14);
+
+        height: calc(100vh - calc($unit * 30));
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: calc($unit * 6);
+
+        max-width: 667px;
+    }
+    
+    &__title {
+        color: $color-text-secondary;
+
+        font-family: $ff-sans-mono;
+        font-weight: $type-weight-extra-bold;
+        letter-spacing: -0.03em;
+    }
+
+    &__media {
+        width: 457px;
+        height: 616px;
+
+        border: 1px solid $color-primary;
+    }
+}

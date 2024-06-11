@@ -9,13 +9,13 @@ $base-line-height: 24px;
 
 $type-tiny:     12px;
 $type-small:    14px;
-$type-base:     18px;
-$type-medium:   23px;
+$type-base:     16px;
+$type-medium:   24px;
 $type-large:    28px;
 $type-xlarge:   35px;
 $type-xxlarge:  44px;
 $type-xxxlarge: 55px;
-$type-xxxxlarge: 69px;
+$type-xxxxlarge: 76px;
 
 /**
 * Type weights
@@ -23,11 +23,17 @@ $type-xxxxlarge: 69px;
 $type-weight-light:      300;
 $type-weight-regular:    400;
 $type-weight-bold:       700;
+$type-weight-extra-bold:       700;
 
 /**
 * Font stacks
 */
-$ff-sans: 	'National 2', -apple-system, BlinkMacSystemFont,
+$ff-sans: 	'Geist', -apple-system, BlinkMacSystemFont,
+			"Segoe UI", "Roboto", "Oxygen",
+			"Ubuntu", "Cantarell", "Fira Sans",
+			"Droid Sans", "Helvetica Neue",
+			Helvetica, Arial, sans-serif;
+$ff-sans-mono: 	'Geist-mono', -apple-system, BlinkMacSystemFont,
 			"Segoe UI", "Roboto", "Oxygen",
 			"Ubuntu", "Cantarell", "Fira Sans",
 			"Droid Sans", "Helvetica Neue",

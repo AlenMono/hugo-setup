@@ -51,6 +51,10 @@
             }
 
             &--sml {
+                margin-right: calc($unit * 3);
+            }
+
+            &--base {
                 margin-right: calc($unit * 4);
             }
 

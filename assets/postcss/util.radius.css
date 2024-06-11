@@ -8,6 +8,10 @@
             border-radius: $radius-base;
         }
 
+        &--med {
+            border-radius: calc($unit * 2);
+        }
+
         &--full {
             border-radius: $radius-full;
         }

@@ -31,8 +31,50 @@
         }
 
         &--logo {
-            background-image: svg-load('../postcss-svg/logo.svg', fill: $color-primary);
+            width: calc($unit * 25);
             height: calc($unit * 7);
+
+            background-image: svg-load('assets/postcss-svg/logo.svg');
+        }
+
+        &--customer-engagement {
+            background-image: svg-load('assets/postcss-svg/use-cases/customer-engagement.svg');
+        }
+
+        &--compliance-training {
+            background-image: svg-load('assets/postcss-svg/use-cases/compliance-training.svg');
+        }
+
+        &--safety-protocols {
+            background-image: svg-load('assets/postcss-svg/use-cases/safety-protocols.svg');
+        }
+
+        &--diagnostics {
+            background-image: svg-load('assets/postcss-svg/use-cases/diagnostics.svg');
+        }
+
+        &--employee-onboarding {
+            background-image: svg-load('assets/postcss-svg/use-cases/employee-onboarding.svg');
+        }
+
+        &--feedback-collection {
+            background-image: svg-load('assets/postcss-svg/use-cases/feedback-collection.svg');
+        }
+
+        &--insurance {
+            background-image: svg-load('assets/postcss-svg/use-cases/insurance.svg');
+        }
+
+        &--legal-consultations {
+            background-image: svg-load('assets/postcss-svg/use-cases/legal-consultations.svg');
+        }
+
+        &--project-management {
+            background-image: svg-load('assets/postcss-svg/use-cases/project-management.svg');
+        }
+
+        &--safety-protocols {
+            background-image: svg-load('assets/postcss-svg/use-cases/safety-protocols.svg');
         }
     }
 }
